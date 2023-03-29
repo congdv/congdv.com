@@ -8,10 +8,10 @@
 
 @layer components {
   #__next {
-      @apply min-h-screen flex flex-col;
+    @apply min-h-screen flex flex-col;
   }
   html,
   body {
-      @apply min-h-screen;
+    @apply min-h-screen;
   }
 }
