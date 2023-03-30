@@ -22,7 +22,7 @@ export default function Home() {
             >
               notemd.app:
             </Link>{' '}
-            A text editor for writing Markdown with Vim's key binding
+            A text editor for writing Markdown with Vim&apos;s key binding
           </li>
           <li>
             <Link
