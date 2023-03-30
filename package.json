@@ -39,8 +39,7 @@
     "tailwindcss": "^3.3.0"
   },
   "lint-staged": {
-    "**/*.{ts,tsx}": [
-      "prettier --write ."
-    ]
+    "*": "prettier --ignore-unknown --write",
+    "*.{ts,tsx}": "eslint --fix"
   }
 }
