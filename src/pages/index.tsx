@@ -35,6 +35,33 @@ export default function Home() {
             </Link>{' '}
             A web-based snake game
           </li>
+          <li>
+            <Link
+              href="https://30daysofsharing.com/"
+              className="font-bold hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              30 days of sharing:
+            </Link>{' '}
+            A collection to share knowledge in frontend/web development that was
+            organized by WeBuild Community
+          </li>
+        </ul>
+        <p className="mt-10">Open source projects that I contributed</p>
+        <ul className="mt-2 ml-5 list-disc">
+          <li>
+            <Link
+              href="https://github.com/UniversalDataTool/universal-data-tool"
+              className="font-bold hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Universal Data Tool:
+            </Link>{' '}
+            Collaborate & label any type of data, images, text, or documents, in
+            an easy web interface or desktop app.
+          </li>
         </ul>
         <p className="mt-10">Find my on the internet</p>
         <ul className="mt-2 ml-5 list-disc">
