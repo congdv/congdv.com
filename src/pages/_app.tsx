@@ -1,9 +1,11 @@
+import useGtag from '@/scripts/useGtag'
 import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Link from 'next/link'
 
 export default function App({ Component, pageProps }: AppProps) {
+  useGtag()
   return (
     <>
       <Head>
