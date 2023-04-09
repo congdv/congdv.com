@@ -15,7 +15,7 @@ export default function Home() {
           </li>
           <li>
             <Link
-              href="https://notemd-app.vercel.app/"
+              href="https://notemd.congdv.com/"
               className="font-bold hover:underline"
               target="_blank"
               rel="noopener noreferrer"
