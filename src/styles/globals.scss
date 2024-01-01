@@ -16,3 +16,24 @@
     font-family: 'Roboto Mono', monospace;
   }
 }
+
+footer .contact li {
+  display: inline;
+  margin-right: 10px;
+}
+
+footer .contact + div {
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+}
+
+.banner img {
+  border-radius: 50%;
+}
+
+.banner .about-me {
+  margin: auto;
+}

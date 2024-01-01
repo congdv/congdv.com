@@ -23,7 +23,41 @@ export default function App({ Component, pageProps }: AppProps) {
       </div>
       <Component {...pageProps} />
       <footer className="flex justify-center items-center h-16 bg-stone-100 text-stone-500 text-sm">
-        @Công
+        <div>
+          <ul className="contact">
+            <li>
+              <Link
+                href="https://github.com/congdv"
+                className="font-bold hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://twitter.com/CongDao9"
+                className="font-bold hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                twitter
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.linkedin.com/in/congdv/"
+                className="font-bold hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin
+              </Link>
+            </li>
+          </ul>
+          <div>@Công</div>
+        </div>
       </footer>
     </>
   )

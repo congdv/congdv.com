@@ -1,10 +1,23 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
   return (
     <>
       <main className="container-center my-10 min-h-full flex-1">
-        <h1 className="text-4xl font-bold">{"Hi there, I'm Cong!"}</h1>
+        <div className="banner">
+          <Image
+            className="avatar"
+            src="/profile.png"
+            width={200}
+            height={200}
+            alt="Cong Dao's avatar"
+          />
+          <div className="about-me">
+            <h1 className="text-4xl font-bold">{"Hi there, I'm Cong!"}</h1>
+            <p>I&apos;m a software developer</p>
+          </div>
+        </div>
         <p className="mt-10">Welcome to my space on the web</p>
         <ul className="mt-2 ml-5 list-disc">
           <li>
@@ -31,7 +44,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Snake game:
+              snake game:
             </Link>{' '}
             A web-based snake game
           </li>
@@ -61,39 +74,6 @@ export default function Home() {
             </Link>{' '}
             Collaborate & label any type of data, images, text, or documents, in
             an easy web interface or desktop app.
-          </li>
-        </ul>
-        <p className="mt-10">Find my on the internet</p>
-        <ul className="mt-2 ml-5 list-disc">
-          <li>
-            <Link
-              href="https://github.com/congdv"
-              className="font-bold hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              github
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://twitter.com/CongDao9"
-              className="font-bold hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              twitter
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.linkedin.com/in/congdv/"
-              className="font-bold hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              linkedin
-            </Link>
           </li>
         </ul>
       </main>
