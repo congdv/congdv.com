@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <main className="container-center my-10 min-h-full flex-1">
-        <h1 className="text-4xl font-bold">{"Hey there, I'm Cong !"}</h1>
+        <h1 className="text-4xl font-bold">{"Hi there, I'm Cong!"}</h1>
         <p className="mt-10">Welcome to my space on the web</p>
         <ul className="mt-2 ml-5 list-disc">
           <li>
