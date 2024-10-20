@@ -15,10 +15,23 @@ export default function Home() {
           />
           <div className="about-me">
             <h1 className="text-4xl font-bold">{"Hi there, I'm Cong!"}</h1>
-            <p>I&apos;m a software developer</p>
+            <p>I&apos;m a software developer, a learner...</p>
           </div>
         </div>
         <p className="mt-10">Welcome to my space on the web</p>
+        <div className="p-2 my-5 bg-blue-100 rounded shadow-sm">
+          I&apos;m currently working on feedback application that allows people
+          create their own feedback space and get feedbacks from their customer.
+          Please take a look{' '}
+          <Link
+            href="https://feedback.congdv.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="font-bold hover:underline"
+          >
+            here
+          </Link>
+        </div>
         <ul className="mt-2 ml-5 list-disc">
           <li>
             <Link href="/words" className="font-bold hover:underline">
@@ -50,7 +63,7 @@ export default function Home() {
           </li>
           <li>
             <Link
-              href="https://30daysofsharing.com/"
+              href="https://30daysofsharing.congdv.com/"
               className="font-bold hover:underline"
               target="_blank"
               rel="noopener noreferrer"
