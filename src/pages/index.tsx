@@ -19,7 +19,7 @@ export default function Home() {
           </div>
         </div>
         <p className="mt-10">Welcome to my space on the web</p>
-        <div className="p-2 my-5 bg-blue-100 rounded shadow-sm">
+        {/* <div className="p-2 my-5 bg-blue-100 rounded shadow-sm">
           I&apos;m currently working on feedback application that allows people
           create their own feedback space and get feedbacks from their customer.
           Please take a look{' '}
@@ -31,13 +31,36 @@ export default function Home() {
           >
             here
           </Link>
-        </div>
+        </div> */}
         <ul className="mt-2 ml-5 list-disc">
           <li>
             <Link href="/words" className="font-bold hover:underline">
               words:
             </Link>{' '}
             Writing my learning notes
+          </li>
+          <li>
+            <Link
+              href="https://stubify.congdv.com/"
+              className="font-bold hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pay Stub Generated App:
+            </Link>{' '}
+            The app helps people create their own pay stub for free
+          </li>
+          <li>
+            <Link
+              href="https://feedback.congdv.com/"
+              className="font-bold hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Feedback app:
+            </Link>{' '}
+            Feedback app that allows people create their own feedback space and
+            get feedbacks from their customer
           </li>
           <li>
             <Link
