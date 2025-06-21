@@ -14,9 +14,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Personal website of Cong Dao, a software developer passionate about creating meaningful applications and sharing knowledge." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
       
       {/* Header */}
@@ -64,7 +61,7 @@ export default function App({ Component, pageProps }: AppProps) {
               </Link>
             </div>
             <div className="text-gray-500 text-sm">
-              © {new Date().getFullYear()}  Cong Dao. Built with AI.
+              © {new Date().getFullYear()} Cong Dao. Built with AI.
             </div>
           </div>
         </div>

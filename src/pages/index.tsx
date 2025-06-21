@@ -20,10 +20,10 @@ export default function Home() {
             />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-6">
-            Hi there, I'm Cong!
+            Hi there, I&apos;m Cong!
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
-            I'm a software developer passionate about creating meaningful applications and sharing knowledge with the community. 
+            I&apos;m a software developer passionate about creating meaningful applications and sharing knowledge with the community. 
             I love building tools that solve real problems and contribute to open source projects.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 mb-16 shadow-lg border border-white/20">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Welcome to my space on the web</h2>
           <p className="text-gray-600 leading-relaxed">
-            Here you'll find my projects, thoughts, and contributions to the developer community. 
+            Here you&apos;ll find my projects, thoughts, and contributions to the developer community. 
             I believe in building software that makes a difference and sharing knowledge to help others grow.
           </p>
         </div>
