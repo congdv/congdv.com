@@ -64,7 +64,7 @@ export default function App({ Component, pageProps }: AppProps) {
               </Link>
             </div>
             <div className="text-gray-500 text-sm">
-              © 2024 Cong Dao. Built with Next.js and Tailwind CSS.
+              © {new Date().getFullYear()}  Cong Dao. Built with AI.
             </div>
           </div>
         </div>

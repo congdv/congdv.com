@@ -27,11 +27,14 @@ export default function Home() {
             I love building tools that solve real problems and contribute to open source projects.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
+            <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Java</span>
+            <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Spring Boot</span>
             <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">React</span>
             <span className="px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">Node.js</span>
-            <span className="px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">TypeScript</span>
-            <span className="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">JavaScript</span>
+            <span className="px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">TypeScript/JavaScript</span>
             <span className="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Next.js</span>
+            <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Go</span>
+            <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">AI</span>
           </div>
         </div>
 
@@ -93,29 +96,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Open Source Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
-          <h2 className="text-3xl font-bold mb-6">Open Source Contributions</h2>
-          <p className="text-blue-100 mb-6 leading-relaxed">
-            I believe in giving back to the community through open source contributions. 
-            Here are some projects I've been fortunate to contribute to:
-          </p>
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-            <h3 className="text-xl font-semibold mb-3">
-              <Link
-                href="https://github.com/UniversalDataTool/universal-data-tool"
-                className="hover:underline transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Universal Data Tool
-              </Link>
-            </h3>
-            <p className="text-blue-100 leading-relaxed">
-              Collaborate & label any type of data, images, text, or documents, in an easy web interface or desktop app.
-            </p>
-          </div>
-        </div>
       </main>
     </div>
   )
