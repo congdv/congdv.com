@@ -19,12 +19,15 @@ export default function Words({ allPosts }: { allPosts: PostMetaData[] }) {
         <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20">
           <div className="space-y-6">
             {allPosts.map((post) => (
-              <div key={post.key} className="flex items-center py-4 border-b border-gray-200 last:border-b-0">
+              <div
+                key={post.key}
+                className="flex items-center py-4 border-b border-gray-200 last:border-b-0"
+              >
                 <span className="text-sm text-gray-500 font-mono mr-6 min-w-[100px]">
                   {post.date}
                 </span>
-                <Link 
-                  href={post.linkPath} 
+                <Link
+                  href={post.linkPath}
                   className="text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300 hover:underline"
                 >
                   {post.title}

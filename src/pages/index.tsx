@@ -23,39 +23,42 @@ export default function Home() {
             Hi there, I&apos;m Cong!
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
-            I&apos;m a software developer passionate about creating meaningful applications and sharing knowledge with the community. 
-            I love building tools that solve real problems and contribute to open source projects.
+            I&apos;m a software developer passionate about creating meaningful
+            applications and sharing knowledge with the community. I love
+            building tools that solve real problems and contribute to open
+            source projects.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Java</span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Spring Boot</span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">React</span>
-            <span className="px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">Node.js</span>
-            <span className="px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">TypeScript/JavaScript</span>
-            <span className="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Next.js</span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Go</span>
-            <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">AI</span>
-          </div>
         </div>
 
         {/* Welcome Section */}
         <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 mb-16 shadow-lg border border-white/20">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Welcome to my space on the web</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            Welcome to my space on the web
+          </h2>
           <p className="text-gray-600 leading-relaxed">
-            Here you&apos;ll find my projects, thoughts, and contributions to the developer community. 
-            I believe in building software that makes a difference and sharing knowledge to help others grow.
+            Here you&apos;ll find my projects, thoughts, and contributions to
+            the developer community. I believe in building software that makes a
+            difference and sharing knowledge to help others grow.
           </p>
         </div>
 
-        {/* Projects Section */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Featured Projects</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+            Projects
+          </h2>
+          <div className="flex flex-col gap-6">
             <ProjectCard
               title="Words"
               description="Writing my learning notes and sharing insights about software development"
               href="/words"
               isInternal={true}
+              featured={false}
+            />
+            <ProjectCard
+              title="Vibe Goal"
+              description="VibeGoal is a simple service that sends you a fresh, uplifting motivational quote to your inbox every day."
+              href="https://vibegoal.app"
+              isInternal={false}
               featured={true}
             />
             <ProjectCard
@@ -63,14 +66,14 @@ export default function Home() {
               description="Create professional pay stubs for free with our easy-to-use generator"
               href="https://stubify.congdv.com/"
               isInternal={false}
-              featured={true}
+              featured={false}
             />
             <ProjectCard
               title="Feedback App"
               description="Create your own feedback space and collect valuable insights from customers"
               href="https://feedback.congdv.com/"
               isInternal={false}
-              featured={true}
+              featured={false}
             />
             <ProjectCard
               title="notemd.app"
@@ -95,14 +98,19 @@ export default function Home() {
             />
           </div>
         </div>
-
       </main>
     </div>
   )
 }
 
 // Project Card Component
-function ProjectCard({ title, description, href, isInternal, featured }: {
+function ProjectCard({
+  title,
+  description,
+  href,
+  isInternal,
+  featured,
+}: {
   title: string
   description: string
   href: string
@@ -110,7 +118,11 @@ function ProjectCard({ title, description, href, isInternal, featured }: {
   featured?: boolean
 }) {
   return (
-    <div className={`group bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${featured ? 'ring-2 ring-blue-200' : ''}`}>
+    <div
+      className={`group bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${
+        featured ? 'ring-2 ring-blue-200' : ''
+      }`}
+    >
       <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
         {isInternal ? (
           <Link href={href} className="hover:underline">

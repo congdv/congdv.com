@@ -11,25 +11,28 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Cong Dao - Software Developer</title>
-        <meta name="description" content="Personal website of Cong Dao, a software developer passionate about creating meaningful applications and sharing knowledge." />
+        <meta
+          name="description"
+          content="Personal website of Cong Dao, a software developer passionate about creating meaningful applications and sharing knowledge."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-md border-b border-white/20 shadow-sm sticky top-0 z-50">
         <div className="container-center px-6 py-4">
-          <Link 
-            className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-blue-700 hover:to-purple-700 transition-all duration-300" 
+          <Link
+            className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
             href="/"
           >
             @Công
           </Link>
         </div>
       </header>
-      
+
       <Component {...pageProps} />
-      
+
       {/* Footer */}
       <footer className="bg-white/80 backdrop-blur-md border-t border-white/20 mt-16">
         <div className="container-center px-6 py-8">
@@ -61,7 +64,7 @@ export default function App({ Component, pageProps }: AppProps) {
               </Link>
             </div>
             <div className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} Cong Dao. Built with AI.
+              © {new Date().getFullYear()} Cong Dao.
             </div>
           </div>
         </div>
