@@ -1,12 +1,12 @@
 import React from 'react'
-import useGtag from '@/scripts/useGtag'
 import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Link from 'next/link'
+import { Analytics } from "@vercel/analytics/next"
 
 export default function App({ Component, pageProps }: AppProps) {
-  useGtag()
+  // useGtag()
   return (
     <>
       <Head>
@@ -32,6 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </header>
 
       <Component {...pageProps} />
+      <Analytics />
 
       {/* Footer */}
       <footer className="bg-white/80 backdrop-blur-md border-t border-white/20 mt-16">
