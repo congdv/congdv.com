@@ -3,10 +3,18 @@ import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Link from 'next/link'
-import { Analytics } from "@vercel/analytics/next"
+import * as Counterscale from "@counterscale/tracker";
+import Script from 'next/script'
 
 export default function App({ Component, pageProps }: AppProps) {
-  // useGtag()
+
+
+  if(!Counterscale) {
+    Counterscale.init({
+      siteId: "localhost",
+      reporterUrl: "https://counterscale.congdaovan94.workers.dev/collect",
+  });
+  }
   return (
     <>
       <Head>
@@ -17,6 +25,12 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <Script
+          id="counterscale-script"
+          data-site-id="localhost"
+          src="https://counterscale.congdaovan94.workers.dev/tracker.js"
+          defer
+      />
       </Head>
 
       {/* Header */}
@@ -32,7 +46,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </header>
 
       <Component {...pageProps} />
-      <Analytics />
+      {/* <Analytics /> */}
 
       {/* Footer */}
       <footer className="bg-white/80 backdrop-blur-md border-t border-white/20 mt-16">
