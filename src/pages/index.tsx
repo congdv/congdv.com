@@ -64,7 +64,7 @@ export default function Home() {
             <ProjectCard
               title="Simple Paystub Generator"
               description="Create professional pay stubs for free with our easy-to-use generator"
-              href="https://stubify.congdv.com/"
+              href="https://simplepaystub.com/"
               isInternal={false}
               featured={false}
             />
