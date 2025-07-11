@@ -3,18 +3,11 @@ import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Link from 'next/link'
-import * as Counterscale from "@counterscale/tracker";
 import Script from 'next/script'
 
 export default function App({ Component, pageProps }: AppProps) {
 
 
-  if(!Counterscale) {
-    Counterscale.init({
-      siteId: process.env.NEXT_PUBLIC_COUNTERSCALE_SITE_ID || '',
-      reporterUrl: `${process.env.NEXT_PUBLIC_COUNTERSCALE_REPORTER_HOST}v/collect`,
-  });
-  }
   return (
     <>
       <Head>
