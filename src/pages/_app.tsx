@@ -11,8 +11,8 @@ export default function App({ Component, pageProps }: AppProps) {
 
   if(!Counterscale) {
     Counterscale.init({
-      siteId: "localhost",
-      reporterUrl: "https://counterscale.congdaovan94.workers.dev/collect",
+      siteId: process.env.NEXT_PUBLIC_COUNTERSCALE_SITE_ID || '',
+      reporterUrl: `${process.env.NEXT_PUBLIC_COUNTERSCALE_REPORTER_HOST}v/collect`,
   });
   }
   return (
@@ -27,8 +27,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
         <Script
           id="counterscale-script"
-          data-site-id="localhost"
-          src="https://counterscale.congdaovan94.workers.dev/tracker.js"
+          data-site-id={`${process.env.NEXT_PUBLIC_COUNTERSCALE_SITE_ID}`}
+          src={`${process.env.NEXT_PUBLIC_COUNTERSCALE_REPORTER_HOST}/tracker.js`}
           defer
       />
       </Head>
