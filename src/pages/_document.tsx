@@ -1,5 +1,6 @@
 import { GA_TRACKING_ID } from '@/scripts/gtag'
 import { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 export default function Document() {
   return (
@@ -15,22 +16,11 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
+         <Script
+          id="counterscale-script"
+          data-site-id={`${process.env.NEXT_PUBLIC_COUNTERSCALE_SITE_ID}`}
+          src={`${process.env.NEXT_PUBLIC_COUNTERSCALE_REPORTER_HOST}/tracker.js`}
+          defer
         />
       </Head>
       <body>
