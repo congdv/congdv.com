@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -85,7 +84,7 @@ export default function Home() {
             <ProjectCard
               title="Snake Game"
               description="A classic web-based snake game built with modern web technologies"
-              href="https://congdv.github.io/snake-clone/"
+              href="https://snake.congdv.com/"
               isInternal={false}
               featured={false}
             />
@@ -119,9 +118,8 @@ function ProjectCard({
 }) {
   return (
     <div
-      className={`group bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${
-        featured ? 'ring-2 ring-blue-200' : ''
-      }`}
+      className={`group bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ${featured ? 'ring-2 ring-blue-200' : ''
+        }`}
     >
       <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
         {isInternal ? (
