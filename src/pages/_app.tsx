@@ -1,9 +1,7 @@
-import React from 'react'
 import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Link from 'next/link'
-import Script from 'next/script'
 
 export default function App({ Component, pageProps }: AppProps) {
 
@@ -18,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-       
+
       </Head>
 
       {/* Header */}
@@ -64,6 +62,14 @@ export default function App({ Component, pageProps }: AppProps) {
                 rel="noopener noreferrer"
               >
                 LinkedIn
+              </Link>
+              <Link
+                href="https://counterscale.congdaovan94.workers.dev/dashboard?site=congdv.com&interval=1d"
+                className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Analytics
               </Link>
             </div>
             <div className="text-gray-500 text-sm">
