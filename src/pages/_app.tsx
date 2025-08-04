@@ -64,7 +64,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 LinkedIn
               </Link>
               <Link
-                href="https://counterscale.congdaovan94.workers.dev/dashboard?site=congdv.com&interval=1d"
+                href="https://analytics.congdv.com/dashboard?site=congdv.com"
                 className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
                 target="_blank"
                 rel="noopener noreferrer"
