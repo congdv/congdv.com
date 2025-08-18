@@ -32,7 +32,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </header>
 
       <Component {...pageProps} />
-      {/* <Analytics /> */}
 
       {/* Footer */}
       <footer className="bg-white/80 backdrop-blur-md border-t border-white/20 mt-16">
@@ -62,14 +61,6 @@ export default function App({ Component, pageProps }: AppProps) {
                 rel="noopener noreferrer"
               >
                 LinkedIn
-              </Link>
-              <Link
-                href="https://analytics.congdv.com/dashboard?site=congdv.com"
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Analytics
               </Link>
             </div>
             <div className="text-gray-500 text-sm">
