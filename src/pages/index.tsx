@@ -49,8 +49,8 @@ export default function Home() {
             <ProjectCard
               title="My blog"
               description="Writing my learning notes and sharing insights about software development"
-              href="/blog"
-              isInternal={true}
+              href="https://congdv.substack.com/"
+              isInternal={false}
               featured={true}
             />
             <ProjectCard
