@@ -15,7 +15,7 @@ export async function getAllPosts() {
         const fullPath = path.join(postsDirectory, fileName)
         const fileContents = fs.readFileSync(fullPath, 'utf8')
         const { data } = matter(fileContents)
-        const linkPath = `words/${fileName.replace(/\.mdx$/, '')}`
+        const linkPath = `blog/${fileName.replace(/\.mdx$/, '')}`
         return {
           key: index,
           linkPath: linkPath,

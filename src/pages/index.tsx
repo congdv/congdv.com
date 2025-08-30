@@ -47,10 +47,17 @@ export default function Home() {
           </h2>
           <div className="flex flex-col gap-6">
             <ProjectCard
-              title="Words"
+              title="My blog"
               description="Writing my learning notes and sharing insights about software development"
-              href="/words"
+              href="/blog"
               isInternal={true}
+              featured={true}
+            />
+            <ProjectCard
+              title="Simple Paystub Generator"
+              description="Create professional pay stubs for free with our easy-to-use generator"
+              href="https://simplepaystub.com/"
+              isInternal={false}
               featured={false}
             />
             <ProjectCard
@@ -58,12 +65,12 @@ export default function Home() {
               description="VibeGoal is a simple service that sends you a fresh, uplifting motivational quote to your inbox every day."
               href="https://vibegoal.app"
               isInternal={false}
-              featured={true}
+              featured={false}
             />
             <ProjectCard
-              title="Simple Paystub Generator"
-              description="Create professional pay stubs for free with our easy-to-use generator"
-              href="https://simplepaystub.com/"
+              title="Snake Retro Game"
+              description="A classic web-based snake game built with modern web technologies"
+              href="https://snake.congdv.com/"
               isInternal={false}
               featured={false}
             />
@@ -75,19 +82,13 @@ export default function Home() {
               featured={false}
             />
             <ProjectCard
-              title="notemd.app"
+              title="Markdown Note"
               description="A modern text editor for writing Markdown with Vim's key binding support"
               href="https://notemd.congdv.com/"
               isInternal={false}
               featured={false}
             />
-            <ProjectCard
-              title="Snake Game"
-              description="A classic web-based snake game built with modern web technologies"
-              href="https://snake.congdv.com/"
-              isInternal={false}
-              featured={false}
-            />
+
             <ProjectCard
               title="30 Days of Sharing"
               description="A collection of frontend/web development knowledge organized by WeBuild Community"
