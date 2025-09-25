@@ -68,6 +68,13 @@ export default function Home() {
               featured={false}
             />
             <ProjectCard
+              title="PhotoNotes"
+              description="An open-source mobile app built with React Native to capture photo-backed notes."
+              href="https://github.com/congdv/photo-notes"
+              isInternal={false}
+              featured={false}
+            />
+            <ProjectCard
               title="Snake Retro Game"
               description="A classic web-based snake game built with modern web technologies"
               href="https://snake.congdv.com/"
