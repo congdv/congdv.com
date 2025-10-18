@@ -214,11 +214,19 @@ export default function Resume() {
               <div className="space-y-3">
                 <div>
                   <span className="font-semibold text-gray-900">Languages:</span>
-                  <span className="text-gray-700 ml-2">Javascript/Typescript, Java, Python, Bash.</span>
+                  <span className="text-gray-700 ml-2">Java, JavaScript/TypeScript, Python, Go, Bash.</span>
                 </div>
                 <div>
-                  <span className="font-semibold text-gray-900">Tools/Frameworks:</span>
-                  <span className="text-gray-700 ml-2">React, Redux, Node.js, NestJS, Next.js, Prisma, Tailwind CSS, Spring Boot, MongoDB, PostgreSQL, Redis, Git, Docker, Linux/Unix, Kubernetes, Jenkins, RabbitMQ.</span>
+                  <span className="font-semibold text-gray-900">Frameworks:</span>
+                  <span className="text-gray-700 ml-2">Spring Boot, React, Redux, Next.js, Node.js, Express, NestJS, Prisma, Tailwind CSS.</span>
+                </div>
+                <div>
+                  <span className="font-semibold text-gray-900">Databases:</span>
+                  <span className="text-gray-700 ml-2">Vertica, PostgreSQL, MongoDB, Redis, MS SQL.</span>
+                </div>
+                <div>
+                  <span className="font-semibold text-gray-900">Tools/Technologies:</span>
+                  <span className="text-gray-700 ml-2">Docker, Linux/Unix, Kubernetes, Git, Jenkins, RabbitMQ, Vercel, Railway, GCP, Supabase.</span>
                 </div>
               </div>
             </section>
