@@ -34,12 +34,12 @@ export default function Resume() {
                 </a>
                 <span className="hidden md:inline">-</span>
                 <Link
-                  href="https://congdv.com"
+                  href="https://github.com/congdv"
                   className="hover:text-blue-600 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://congdv.com
+                  https://github.com/congdv
                 </Link>
               </div>
             </div>
@@ -47,6 +47,24 @@ export default function Resume() {
             {/* Employment Section */}
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b border-gray-200 pb-2">Employment</h2>
+
+              {/* PointClickCare */}
+              <div className="mb-6">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900">Software Engineer</h3>
+                    <p className="text-lg text-gray-700 font-medium">PointClickCare</p>
+                    <p className="text-gray-600">Toronto, ON, Canada</p>
+                  </div>
+                  <p className="text-gray-600 mt-1 md:mt-0">March 2025 - Present</p>
+                </div>
+                <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                  <li>Developed and maintained full stack features for a healthcare SaaS platform using <strong>Java</strong>, <strong>Spring</strong>, <strong>JSP</strong>, <strong>JavaScript/TypeScript</strong>, <strong>React</strong>, <strong>Azure</strong>, and <strong>SQL Server</strong>, delivering robust solutions across the stack.</li>
+                  <li>Optimised <strong>SQL Server</strong> queries which reduced query execution time by 70%.</li>
+                  <li>Performed proactive monitoring and incident response using <strong>AppDynamics</strong> and <strong>Kibana</strong>.</li>
+                  <li>Optimized development productivity by using <strong>GitHub Copilot</strong>/<strong>Claude Code</strong> to decrease implementation time and enhance code consistency.</li>
+                </ul>
+              </div>
 
               {/* OpenText */}
               <div className="mb-6">
@@ -59,10 +77,9 @@ export default function Resume() {
                   <p className="text-gray-600 mt-1 md:mt-0">October 2023 - March 2025</p>
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
-                  <li>Maintained and modernized the UI for an enterprise Content Management System using React, TypeScript, Backbone.js, and Marionette.</li>
-                  <li>Led frontend integration of an in-app/email notification system, optimizing user experience and system responsiveness.</li>
-                  <li>Co-designed and built a scalable microservice using Spring Boot, Redis, RabbitMQ, and PostgreSQL.</li>
-                  <li>Deployed services with Google Kubernetes Engine and Cloud Foundry.</li>
+                  <li>Developed and maintained system functionality for the Content Management System using <strong>Java Spring Boot</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>React</strong>, <strong>Marionette</strong>, <strong>JQuery</strong>, <strong>Backbone.js</strong>, <strong>Kubernetes</strong>, <strong>Docker</strong>, and <strong>Google Cloud</strong>.</li>
+                  <li>Collaborated with another developer to design and develop a new notification service within a microservice architecture, utilizing <strong>Java/Spring Boot</strong>, <strong>Redis</strong>, <strong>RabbitMQ</strong>, and <strong>PostgreSQL</strong>.</li>
+                  <li>Developed in-app and email notification systems for a Content Management Application using <strong>Java Spring Boot</strong>, <strong>JavaScript</strong>, and <strong>Backbone.js</strong>.</li>
                 </ul>
               </div>
 
@@ -77,13 +94,11 @@ export default function Resume() {
                   <p className="text-gray-600 mt-1 md:mt-0">March 2021 - October 2023</p>
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
-                  <li>Built a real-time analytics dashboard using React, Redux, and TypeScript, improving network visibility for telecom clients.</li>
-                  <li>Designed and implemented reusable React components, enabling the team to build new dashboard features 2x faster.</li>
-                  <li>Developed REST APIs with Node.js, Go, and Spring Boot for seamless backend integration.</li>
-                  <li>Developed a Python-based tool and leveraged Jenkins to automate and schedule daily data exports from the Vertica database, eliminating the need for manual exports.</li>
-                  <li>Developed integration testing with Testcafe that reduced times required for UI tests by 20% when releasing new features.</li>
-                  <li>Implemented a high-performance pre-caching algorithm with Redis in Java Spring Boot, resulting in a significant decrease of 75% in API response time.</li>
-                  <li>Created a Java Database Connectivity(JDBC) library wrapper that integrated with Redis for speeding up slow queries by 100x and decreasing pressure on the database server.</li>
+                  <li>Designed and implemented a comprehensive dashboard solution using <strong>Typescript</strong>, <strong>Javascript</strong>, <strong>React</strong> and <strong>Redux</strong>, empowering customers to enhance application and network Quality of Experience (QoE) by providing real-time insights and network visibility.</li>
+                  <li>Developed high-performance REST APIs using <strong>Node.js</strong>, <strong>Go</strong>, <strong>Docker</strong> and <strong>Java/Spring Boot</strong>, enabling seamless communication between the dashboard and backend systems.</li>
+                  <li>Developed a <strong>Python</strong>-based tool and leveraged <strong>Jenkins</strong> to automate and schedule daily data exports from the <strong>Vertica</strong> database, eliminating the need for manual exports.</li>
+                  <li>Developed integration testing with <strong>Testcafe</strong> that reduced times required for UI tests by 20% when releasing new features.</li>
+                  <li>Implemented a high-performance pre-caching algorithm with <strong>Redis</strong> in <strong>Java/Spring Boot</strong>, resulting in a significant decrease of 75% in API response time.</li>
                 </ul>
               </div>
 
@@ -97,9 +112,9 @@ export default function Resume() {
                   <p className="text-gray-600 mt-1 md:mt-0">May 2020 - August 2020</p>
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
-                  <li>Developed RESTful web APIs with TypeScript, NestJS and MongoDB to enhance frontend consumption.</li>
-                  <li>Designed and implemented dashboard for supply chain management using JavaScript, React and Redux.</li>
-                  <li>Utilized Google Maps to design and implement interactive rail and ocean port maps for user visualization.</li>
+                  <li>Developed RESTful web APIs with <strong>TypeScript</strong>, <strong>NestJS</strong> and <strong>MongoDB</strong> to enhance frontend consumption.</li>
+                  <li>Designed and implemented dashboard for supply chain management using <strong>JavaScript</strong>, <strong>React</strong> and <strong>Redux</strong>.</li>
+                  <li>Utilized <strong>Google Maps</strong> to design and implement interactive rail and ocean port maps for user visualization.</li>
                   <li>Utilized pagination and optimized UI rendering logic to reduce web application load times by 50%.</li>
                 </ul>
               </div>
@@ -114,7 +129,7 @@ export default function Resume() {
                   <p className="text-gray-600 mt-1 md:mt-0">July 2018 - August 2018</p>
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
-                  <li>Designed RESTful web APIs with Java Spring Boot to improve the speed of loading by twice.</li>
+                  <li>Designed RESTful web APIs with <strong>Java/Spring Boot</strong> to improve the speed of loading by twice.</li>
                   <li>Improved fetching received mails from the mail server to the application by using cache and watcher.</li>
                   <li>Improved test coverage by 10% with new unit tests.</li>
                 </ul>
@@ -130,9 +145,9 @@ export default function Resume() {
                   <p className="text-gray-600 mt-1 md:mt-0">May 2016 - July 2017</p>
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
-                  <li>Developed tools with Python to crawl data to create datasets for the data team.</li>
-                  <li>Enhanced the time image processing by 15% with OpenCV and C/C++.</li>
-                  <li>Reduced the labeling images time by 50% for the data team by creating the image annotation tool in QT C++.</li>
+                  <li>Developed tools with <strong>Python</strong> to crawl data to create datasets for the data team.</li>
+                  <li>Enhanced the time image processing by 15% with <strong>OpenCV</strong> and <strong>C/C++</strong>.</li>
+                  <li>Reduced the labeling images time by 50% for the data team by creating the image annotation tool in <strong>QT C++</strong>.</li>
                 </ul>
               </div>
             </section>
@@ -187,7 +202,7 @@ export default function Resume() {
                     </Link>
                     <span className="text-gray-600 font-normal"> (2024)</span>
                   </h3>
-                  <p className="text-gray-700">A lightweight pay stub generator built with Next.js, Tailwind CSS, and React-PDF. Designed a clean, mobile-friendly UI for quick pay stub creation without user accounts.</p>
+                  <p className="text-gray-700">A lightweight pay stub generator built with Next.js, Tailwind CSS, Supabase, and React-PDF. Designed a clean, mobile-friendly UI for quick pay stub creation.</p>
                 </div>
 
                 <div>
@@ -202,7 +217,7 @@ export default function Resume() {
                     </Link>
                     <span className="text-gray-600 font-normal"> (present)</span>
                   </h3>
-                  <p className="text-gray-700">Working on variety of projects using Next.js, Tailwind CSS, React, Prisma, PostgreSQL, C/C++, JavaScript, and TypeScript.</p>
+                  <p className="text-gray-700">Working on variety of projects using Next.js, Tailwind CSS, React, Prisma, PostgreSQL, C/C++, Go, JavaScript, Railway, Supabase, AWS and TypeScript.</p>
                 </div>
               </div>
             </section>
