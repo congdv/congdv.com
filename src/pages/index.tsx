@@ -61,6 +61,13 @@ export default function Home() {
               featured={false}
             />
             <ProjectCard
+              title="PostaMagic"
+              description="The AI-powered platform to grow your Threads audience, schedule posts, and track analytics — all in one place."
+              href="https://postamagic.com/"
+              isInternal={false}
+              featured={false}
+            />
+            <ProjectCard
               title="Vibe Goal"
               description="VibeGoal is a simple service that sends you a fresh, uplifting motivational quote to your inbox every day."
               href="https://vibegoal.app"
